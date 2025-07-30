@@ -1,0 +1,41 @@
+.Filter {
+  width: 300px;
+  height: max-content;
+  padding: 75px 25px 35px 25px;
+  background-color: var(--entiteis-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Filter .FilterSection {
+  width: 80%;
+  height: max-content;
+}
+.Filter .FilterSection .Filter-Header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.Filter .FilterInput {
+  width: 90%;
+}
+.Filter .FilterInput .FilterInput-time {
+  display: flex;
+  align-items: center;
+}
+.Filter .FilterInput .FilterInput-time input {
+  width: 30%;
+  margin-right: 15px;
+}
+.Filter .FilterInput .Filter-hed {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.Filter .FilterInput input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=Filter.css.map */

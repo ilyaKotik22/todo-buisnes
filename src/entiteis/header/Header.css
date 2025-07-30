@@ -1,0 +1,19 @@
+.Header {
+  z-index: 200;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: var(--entiteis-color);
+}
+.Header .Header-navigation {
+  align-items: center;
+  padding-left: 7vw;
+  display: flex;
+  gap: 25px;
+}
+.Header .Header-navigation .Header-nav-item {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=Header.css.map */

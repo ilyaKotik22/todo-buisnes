@@ -1,0 +1,15 @@
+button {
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--action-color);
+  border-radius: var(--border-radius-forEntiteis);
+  padding: 5px 15px;
+  font-size: 14px;
+  transition: 300ms;
+}
+
+button:hover {
+  background-color: #3a4aa8;
+}
+
+/*# sourceMappingURL=myButton.css.map */

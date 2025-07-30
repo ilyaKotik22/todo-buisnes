@@ -1,0 +1,35 @@
+:root{
+  --body-color: #3D3E42;
+  --entiteis-color:  #2A2B2E;
+  --entiteis-deep-color: #1E1E1E;
+  --entiteis-input-color: #222325;
+  --action-color: #546AFF;
+  --text-color: #ffffff;
+
+  --border-radius-forEntiteis: 10px;
+  --pading-for-entiteis: 10px 15px;
+
+}
+*{
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial;
+  color: var(--text-color);
+}
+
+body{
+  background-color: var(--body-color);
+}
+input{
+  background-color: var(--entiteis-input-color);
+  border-radius: 10px;
+  height: 30px;
+}
+input:hover{
+  border: 2px solid var(--action-color);
+}
