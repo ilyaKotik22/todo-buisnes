@@ -1,0 +1,20 @@
+.statistic {
+  padding: 0 2vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  height: max-content;
+  gap: 25px;
+  align-items: center;
+}
+.statistic .statistic-block {
+  margin-top: 25px;
+  width: 30vw;
+  height: 30%;
+}
+.statistic .statistic-block .statistic-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=BodyForStatistic.css.map */

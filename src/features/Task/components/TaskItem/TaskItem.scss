@@ -1,0 +1,85 @@
+.TaskItem{
+  width: 49%;
+  min-width: 350px;
+  height: 280px;
+  background-color: var(--entiteis-color);
+  padding: 20px 30px;
+  border-radius: 10px;
+  transition: 300ms;
+
+
+
+  .TaskItem-header{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .status{
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .active{
+    background-color: var(--action-color);
+  }
+  .over{
+    background-color: var(--entiteis-deep-color);
+  }
+  .later{
+    background-color: #fff;
+  }
+  .mode{
+
+
+    display: flex;
+    justify-content: space-between;
+  }
+  .TaskItem-Section{
+    margin-top: 20px;
+    font-size: 14px;
+
+    .TaskItem-name{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .TaskItem-priority{
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      gap: 10px;
+      transition: 300ms;
+
+      .TaskItem-priorityItem{
+        transition: 300ms;
+        border-radius: 10px;
+        width: 100%;
+        height: 5px;
+        background-color: var(--entiteis-deep-color);
+      }
+      .active{
+        background-color: var(--action-color);
+      }
+  }
+
+  }
+}
+.TaskItem:hover{
+  background-color: var(--action-color);
+
+  .active{
+    background-color: white;
+  }
+  .TaskItem-priority{
+
+
+    .TaskItem-priorityItem{
+
+      background-color: white;
+    }
+    .active{
+      background-color: white;
+    }
+  }
+}

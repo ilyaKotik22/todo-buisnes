@@ -1,0 +1,36 @@
+.Auth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .AuthBody{
+    border-radius: 10px;
+    padding: 25px 25px;
+    width: 30%;
+    height: max-content;
+    background-color: var(--entiteis-color);
+
+    .AuthBody-header{
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .buttons{
+      display: flex;
+      justify-content: space-between;
+    }
+    .AuthBody-section{
+      margin-top: 15px;
+
+      .AuthBody-tittle{
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      input{
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import {FilterSection} from "./filterSection/FilterSection.tsx";
 import './Filter.css'
+import {InputSection} from "./InputSection/InputSection.tsx";
 interface Props{
     ClassName?: string
 }
@@ -10,7 +11,7 @@ export const Filter: React.FC<Props> = ( ) => {
         <div className={'Filter'}>
             <div className="FilterInput">
                 <div className="Filter-hed">Поиск по названию задачи</div>
-                <input placeholder={'название задачи...'}/>
+                <InputSection nameSection={'seorce'}/>
             </div>
             <FilterSection
                 ClassName={'FilterSection'}
@@ -29,17 +30,10 @@ export const Filter: React.FC<Props> = ( ) => {
             <FilterSection
                 ClassName={'FilterSection'}
                 nameSection={'Статус задачи:'}
-                items={["Все статусы", 'Активна', 'Закончина', 'Пропущена']}
+                items={["Все статусы", 'Активна', 'Закончена', 'Пропущенна']}
                 ChangeItems={["Все статусы"]}
                 onChange={() => console.log('ad')}
             />
-            <div className="FilterInput">
-                <div className="Filter-hed">Дедлайн задачи</div>
-                <div className="FilterInput-time">
-                    <input/>
-                    дней
-                </div>
 
-            </div>
         </div>);
 };

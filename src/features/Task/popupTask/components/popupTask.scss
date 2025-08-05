@@ -1,0 +1,91 @@
+.popupTask{
+
+  .bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .popupTask-body{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 35px 35px;
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    z-index: 500 ;
+    width: 30vw;
+
+    background-color: var(--entiteis-color);
+
+    .header{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .popupTask-section{
+        margin-top: 20px;
+        width: 100%;
+        div{
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      input{
+        width: 100%;
+      }
+      textarea {
+
+        border-radius: 10px;
+        height: 100px;
+        width: 100%;
+        resize: none;         /* Отключает изменение размера мышью */
+        transform-origin: 0 0; /* Фиксирует точку трансформации */
+        background-color: var(--entiteis-input-color);
+      }
+      textarea:hover{
+        border: 2px solid var(--action-color);
+      }
+      .popupTask-typeTask{
+        display: flex;
+        gap: 10px;
+
+        .passive{
+          background-color: var(--disAction-color);
+        }
+      }
+      .popupTask-prior{
+        gap: 5px;
+        display: flex;
+        flex-grow: 1;
+
+        .passive{
+          background-color: var(--disAction-color);
+        }
+        button{
+            height: 5px;
+            width: 100%;
+        }
+      }
+
+    }
+    .time{
+
+      input{
+        width: 30% ;
+      }
+    }
+    .butt{
+        display: flex;
+        justify-content: space-between;
+
+      #dd{
+        background-color: var(--disAction-color);
+      }
+    }
+  }
+}

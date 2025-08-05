@@ -1,0 +1,33 @@
+.TaskArea {
+  margin-left: 6vw;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.right-side {
+  width: 65%;
+}
+
+.panelTasks {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 45px;
+  margin-left: 6vw;
+  width: 100%;
+  height: 110px;
+  background-color: var(--entiteis-color);
+  margin-top: 60px;
+}
+.panelTasks div {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=TaskArea.css.map */

@@ -1,9 +1,11 @@
+import BodyForStatistic from "../entiteis/statistic/bodyForStatistic.tsx";
 
 
 const Statistics = () => {
     return (
         <div>
-            stat
+            <br/><br/><br/><br/>
+            <BodyForStatistic/>
         </div>
     );
 };

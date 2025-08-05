@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.popupTask .bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popupTask .popupTask-body {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 35px 35px;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  z-index: 500;
+  width: 30vw;
+  background-color: var(--entiteis-color);
+}
+.popupTask .popupTask-body .header {
+  font-size: 24px;
+  font-weight: bold;
+}
+.popupTask .popupTask-body .popupTask-section {
+  margin-top: 20px;
+  width: 100%;
+}
+.popupTask .popupTask-body .popupTask-section div {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.popupTask .popupTask-body .popupTask-section input {
+  width: 100%;
+}
+.popupTask .popupTask-body .popupTask-section textarea {
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
+  resize: none; /* Отключает изменение размера мышью */
+  transform-origin: 0 0; /* Фиксирует точку трансформации */
+  background-color: var(--entiteis-input-color);
+}
+.popupTask .popupTask-body .popupTask-section textarea:hover {
+  border: 2px solid var(--action-color);
+}
+.popupTask .popupTask-body .popupTask-section .popupTask-typeTask {
+  display: flex;
+  gap: 10px;
+}
+.popupTask .popupTask-body .popupTask-section .popupTask-typeTask .passive {
+  background-color: var(--disAction-color);
+}
+.popupTask .popupTask-body .popupTask-section .popupTask-prior {
+  gap: 5px;
+  display: flex;
+  flex-grow: 1;
+}
+.popupTask .popupTask-body .popupTask-section .popupTask-prior .passive {
+  background-color: var(--disAction-color);
+}
+.popupTask .popupTask-body .popupTask-section .popupTask-prior button {
+  height: 5px;
+  width: 100%;
+}
+.popupTask .popupTask-body .time input {
+  width: 30%;
+}
+.popupTask .popupTask-body .butt {
+  display: flex;
+  justify-content: space-between;
+}
+.popupTask .popupTask-body .butt #dd {
+  background-color: var(--disAction-color);
+}
+
+/*# sourceMappingURL=popupTask.css.map */

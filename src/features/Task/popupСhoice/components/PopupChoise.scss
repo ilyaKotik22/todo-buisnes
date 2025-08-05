@@ -1,0 +1,44 @@
+.PopupChoice{
+  position: fixed;
+  left: 0;
+  top: 0;
+  .PopupChoice-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .PopupChoice-body{
+    border-radius: 10px;
+    padding: 35px 45px;
+    margin-left: 30vw;
+    margin-top: 15vh;
+    width: 40vw;
+    height: max-content;
+    background-color: var(--entiteis-color);
+
+    .PopupChoice-header{
+      font-size: 24px;
+      font-weight: bold;
+      width: max-content;
+      margin: auto;
+    }
+    .PopupChoice-section{
+      margin-top: 25px;
+
+      .PopupChoice-sectionHeader{
+          font-size: 16px;
+        font-weight: bold;
+      }
+      .PopupChoice-desc{
+          font-size: 14px;
+      }
+    }
+    .PopupChoice-buttonSection{
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+}

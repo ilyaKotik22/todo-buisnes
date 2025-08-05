@@ -1,0 +1,36 @@
+.popupAction {
+  display: flex;
+  position: fixed;
+  top: 90vh;
+  left: 5vw;
+  width: max-content;
+  height: max-content;
+  padding: 10px 30px;
+  background-color: var(--action-color);
+  animation: slide-in 1000ms ease-out forwards;
+  border-radius: 10px;
+  vertical-align: top;
+}
+.popupAction div {
+  margin-top: 3px;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  35% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=popupAction.css.map */
