@@ -8,6 +8,6 @@ TypeScript, React, RTK, Saas, lockalStorage, date-fns
 
 # Протестировать:
 
-<a href=''>перейти по ссылке <--</a>
+<a href='https://ilyakotik22.github.io/todo-buisnes/'>перейти по ссылке <--</a>
 
 или скачать репозиторий, установить зависимости, ввести в консоль npm run dev
