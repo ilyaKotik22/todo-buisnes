@@ -4,10 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "test": "vitest --ui",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "type:check": "node ./scripts/type-check.js",
+    "i18:check": "node ./scripts/e17-check.js",
+    "build:storybool": "node ./scripts/storybook.js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -22,15 +26,21 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
+    "@vitest/ui": "^4.0.14",
     "eslint": "^9.30.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "jsdom": "^27.2.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
-    "vite": "^7.0.4"
+    "vite": "^7.0.4",
+    "vitest": "^4.0.14"
   }
 }
