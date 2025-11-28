@@ -26,7 +26,7 @@ export const Header: React.FC<Props> = ({ ClassName }) => {
                 <div className="Header-nav-item"><a href="/">главная</a></div>
                 <div className="Header-nav-item"><a href="/statistics">статистика</a></div>
                 {!userSelector.login && <div className="Header-nav-item"><a href="/auth">войти</a></div>}
-                <div className="Header-nav-item"><a style={{color: '#546AFF'}} href="/auth">{userSelector.login}</a></div>
+                <div className="Header-nav-item"><a style={{color: '#546AFF'}} href="/auth">{userSelector.login || 'nule'}</a></div>
 
 
             </nav>
