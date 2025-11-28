@@ -1,25 +1,35 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
 on: [push]
+
 jobs:
-  init:
+  build-and-test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-varsion: [22.x]
+        node-version: [22.x]    # исправлено: node-version, а не node-varsion
+
     steps:
-      - uses: action/checkout@v3
-      - name: Starting Node.js ${{ matrix.node-varsion}}
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4   # v4 — актуальная версия на 2025 год
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-varsion}}
-        - name: instal modules
-          run: npm install
-        - name: build project
-          run: npm build
-        - name: i18:check
-          run: i18:check
-        - name: storybool
-          run: build:storybook
-        - name: test--ui
-          run: test
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'              # рекомендуется добавить кэширование
+
+      - name: Install dependencies
+        run: npm ci                   # лучше npm ci вместо npm install в CI
+
+      - name: Build project
+        run: npm run build             # почти наверняка у тебя скрипт build, а не npm build
+
+      - name: i18n check
+        run: npm run i18:check         # если в package.json есть скрипт "i18:check"
+
+      - name: Build Storybook
+        run: npm run build:storybook   # аналогично
+
+      - name: Run UI tests
+        run: npm run test--ui          # или просто npm test, как у тебя написано в package.json
