@@ -32,4 +32,4 @@ jobs:
         run: npm run build:storybook   # аналогично
 
       - name: Run UI tests
-        run: npm run test--ui          # или просто npm test, как у тебя написано в package.json
+        run: npm run test          # или просто npm test, как у тебя написано в package.json
