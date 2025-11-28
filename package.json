@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "type:check": "node ./scripts/type-check.js",
     "i18:check": "node ./scripts/e17-check.js",
-    "build:storybool": "node ./scripts/storybook.js"
+    "build:storybook": "node ./scripts/storybook.js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
